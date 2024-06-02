@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-sidebar">
+            <div class="logo">
+                <img src="assets/odin-logo.png" alt="Logo">
+                <h1>ODIN</h1>
+            </div>
+            <p class="photo-credit">Photo by Halie West on Unsplash</p>
+        </div>
+        <main class="form-container">
+            <div class="form-header">
+                <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</h2>
+                <h2>You <em>know</em> you want to.</h2>
+            </div>
+            <div class="form-content">
+                <form>
+                    <h2>Let's do this!</h2>
+                    <div class="form-labels">
+                        <div class="form-row">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="first-name">
+                        </div>
+                        <div class="form-row">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="last-name">
+                        </div>
+                        <div class="form-row">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-row">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="tel" id="phone-number" name="phone-number">
+                        </div>
+                        <div class="form-row">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" required pattern=".{8,}" title="Must contain at least 8 or more characters">
+                        </div>
+                        <div class="form-row">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm-password" name="confirm-password" required pattern=".{8,}" title="Must contain at least 8 or more characters">
+                            <span class="error-message">* Passwords do not match</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </main>
+    </div>
+</body>
+</html>
